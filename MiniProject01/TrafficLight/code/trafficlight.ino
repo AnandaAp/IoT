@@ -3,11 +3,6 @@ const int ledPinRed =  26;
 const int ledPinYellow = 27;
 const int ledPinGreen = 23;
 
-/* Input led aku set GND
-   Jadi ketika pertama kali dijalankan,maka 
-   seluruh led akan menyala terlebih dahulu
-*/
-
 /* unsigned long berfungsi untuk menyimpan data yang bersifat "menyimpan waktu"
    karena int tidak mampu untuk menyimpan waktu
 */
