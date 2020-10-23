@@ -7,3 +7,7 @@
 - 1 buah sensor DHT 11
 - 1 buah ESP-WROOM32
 - kabel jumper seperlunya
+## Berikut adalah gambar skema breadboardnya:
+![skema breadboard](https://github.com/AnandaAp/IoT/blob/main/MiniProject02/HumidityCensorWithESP32/Skema/skema%20breadboard.jpg)
+## Berikut adalah gambar skematiknya:
+![skematik](https://github.com/AnandaAp/IoT/blob/main/MiniProject02/HumidityCensorWithESP32/Skema/skematik.png)
