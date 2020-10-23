@@ -9,16 +9,6 @@ const int ledPinYellow = 27;
 const int ledPinGreen = 23;
 const int btn = 0;
 
-/* unsigned long berfungsi untuk menyimpan data yang bersifat "menyimpan waktu"
-   karena int tidak mampu untuk menyimpan waktu
-*/
-unsigned long previousMillis = 0;        // akan menyimpah waktu terakhir led dinyalakan
-
-// interval yang aku gunakan:
-const long invRed = 10000;           // interval dalam satuan milisecond
-const long invYellow = 3000;
-const long invGreen = 6000;
-
 //int arahLed = 0;
 int btnState = 0;
 
