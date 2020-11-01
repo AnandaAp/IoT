@@ -111,10 +111,18 @@ void setup() {
 }
 
 void loop() {
-  //memulai Blink
-  Blynk.run();
-  if(btn == 1){
-    timer.run();
+  if(Blynk.connected()){
+    //memulai Blink
+    Serial.println("Sistem sudah terhubung dengan server");
+    ul:
+    Blynk.run();
+    if(btn == 1){
+      timer.run();
+    }
+    goto ul;
+  }
+  else{
+    Serial.println("Sistem gagal terhubung dengan server");
   }
 }
 
@@ -127,13 +135,12 @@ void utsProgram(){
 //method untuk membaca suhu
 void tempDetect(){
     Serial.println("Membaca Suhu");
-    //memberikan delay 2 detik untuk memulai pengukuran suhu
     //membaca temperatur menjadi celcius
     Celcius = dht.readTemperature();
     //mengecek apakah gagal mengukur suhu
     if(isnan(Celcius)){
       Serial.println("gagal mengukur suhu");
-      Serial.println("kembali melakukan pengukuran mengukur");
+      Serial.println("kembali melakukan pengukuran suhu");
       tempDetect();
     }
     //jika sukses mengukur suhu
@@ -154,12 +161,14 @@ void checkTemp(){
     Blynk.virtualWrite(V7,ledPinYellow);
     ledSuhu.setColor(BLYNK_RED);
     ledSuhu.on();
+    Serial.println("Indikator Suhu menyala berwarna merah");
   }
   else{
     digitalWrite(ledPinYellow,HIGH);
     Blynk.virtualWrite(V7,ledPinYellow);
     ledSuhu.setColor(BLYNK_GREEN);
     ledSuhu.on();
+    Serial.println("Indikator Suhu menyala berwarna hijau");
   }
 }
 
