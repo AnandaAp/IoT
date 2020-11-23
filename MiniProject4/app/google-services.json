@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "282863654415",
+    "firebase_url": "https://iot-ukdw.firebaseio.com",
+    "project_id": "iot-ukdw",
+    "storage_bucket": "iot-ukdw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282863654415:android:fd6563c9e266c2bad5b57a",
+        "android_client_info": {
+          "package_name": "com.ndaktau.miniproject4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282863654415-qj05rr9mk1ovv1nv6mngimtb5iiait7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVGDhW1P1JS938JdsOgSSG84dfNCYElRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282863654415-qj05rr9mk1ovv1nv6mngimtb5iiait7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282863654415:android:7b81c8f7e8d02e20d5b57a",
+        "android_client_info": {
+          "package_name": "com.ndaktau.smarthomeminiproject4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282863654415-qj05rr9mk1ovv1nv6mngimtb5iiait7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVGDhW1P1JS938JdsOgSSG84dfNCYElRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282863654415-qj05rr9mk1ovv1nv6mngimtb5iiait7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
