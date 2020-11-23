@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">Mini Project 4</string>
+    <string name="app_name">Smart Home Mini Project 4</string>
+    <string name="smart_home">Smart Home</string>
+    <string name="on">ON</string>
+    <string name="tekan_untuk_mengaktifkan_menonaktifkan_smart_home">Tekan untuk mengaktifkan/Menonaktifkan Smart Home</string>
+    <string name="status_motor_servo">Status Servo</string>
+    <string name="status_system">Status System</string>
+    <string name="lux">: Lux</string>
+    <string name="cahaya">Cahaya</string>
+    <string name="status">: status</string>
 </resources>
