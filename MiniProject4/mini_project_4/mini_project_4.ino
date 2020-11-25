@@ -16,7 +16,7 @@ FirebaseJson json;
 String path = "/esp32";
 //void printResult(FirebaseData &data);
 
-int oldRotation,newRotation,pos = 0;
+int pos = 0;
 float oldLdr = 12,newLdr;
 
 void initWifi(){
@@ -52,7 +52,7 @@ void initFirebase(){
   /*
   This option allows get and delete functions (PUT and DELETE HTTP requests) works for device connected behind the
   Firewall that allows only GET and POST requests.
-  
+
   Firebase.enableClassicRequest(firebaseData, true);
   */
 }
@@ -99,9 +99,8 @@ void setup()
   ESP32PWM::allocateTimer(3);
   motorServo.setPeriodHertz(50);    // standard 50 hz servo
   motorServo.attach(SERVO, 500, 2400); // attaches the servo on pin 18 to the servo objec
-  oldRotation = 0;
   Serial.println("------------------------------------");
-  
+
 }
 
 
@@ -109,13 +108,13 @@ void loop()
 {
   if(Firebase.getString(firebaseData,path+"/status")){
     if(firebaseData.stringData() == "system is off"){
-      Serial.println("Sistem belum menyala");  
+      Serial.println("Sistem belum menyala");
       Serial.println(firebaseData.stringData());
       Firebase.setString(firebaseData,path+"/servo","servo is off");
       delay(1500);
     }
     else if(firebaseData.stringData() == "system is on"){
-      Serial.println("Sistem sudah menyala"); 
+      Serial.println("Sistem sudah menyala");
       Serial.println(firebaseData.stringData());
       ldrDetect();
       servo();
